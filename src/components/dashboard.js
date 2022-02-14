@@ -6,23 +6,25 @@ import {FaTshirt} from 'react-icons/fa'
 
 
 
+
 export default function Dashboard(){
 
     useEffect(() =>{
         cor()
+        
     })
 
     return(
         <div className='panel'>
             <Link to={'/'} id={'1'} className='btDef'><MdHome />
             <span>Novidades</span></Link>
-            <Link to={'/'}  id={'2'} className='btDef'><MdSmartphone />
+            <Link to={'/smartphones'}  id={'2'} className='btDef'><MdSmartphone />
             <span>Celulares</span></Link>
-            <Link to={'/'} id={'3'} className='btDef'><MdLaptop />
+            <Link to={'/eletronicos'} id={'3'} className='btDef'><MdLaptop />
             <span>Eletrônicos</span></Link>
-            <Link to={'/'} id={'4'}  className='btDef'><FaTshirt />
+            <Link to={'/roupas'} id={'4'}  className='btDef'><FaTshirt />
             <span>Roupas</span></Link>
-            <Link to={'/'} id={'5'}  className='btDef'><MdWatch />
+            <Link to={'/acessorios'} id={'5'}  className='btDef'><MdWatch />
             <span>Acessórios</span></Link>
         </div>
     )

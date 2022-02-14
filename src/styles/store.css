@@ -1,0 +1,43 @@
+/*Home*/
+
+.main{
+    padding-left: 4%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 1%;
+}
+
+.homeContent{
+    border: rgb(121, 181, 205) 5px solid;
+    border-radius: 15px;
+    background-color: rgba(121, 181, 205, 0.1);
+
+}
+
+.homeContent:hover{
+    background-color: rgb(121, 181, 205);
+
+    transition: 0.3ms;
+}
+
+.homeContent a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 24vh;
+    color: rgb(121, 143, 146);
+}
+
+.homeContent a:hover{
+    color: rgb(244, 250, 250);
+}
+
+.homeContent img{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
