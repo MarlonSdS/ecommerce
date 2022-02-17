@@ -1,0 +1,15 @@
+.load{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.load h1{
+    color: rgb(121, 143, 146);
+    font-size: 10vh;
+    height: 100%;
+}
