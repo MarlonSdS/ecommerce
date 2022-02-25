@@ -1,21 +1,20 @@
-import react, {useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
 import api from "../services/api";
-import { Link } from "react-router-dom";
-import '../styles/store.css'
-import limitarTitulo from '../services/substr'
+import { useEffect, useState } from "react";
 import Loading from "./Loading";
-import setTitle from "../services/title";
-setTitle()
+import limitarTitulo from "../services/substr";
 
-export default function Home(){
 
+export default function Search(){
+    const {terms} = useParams()
     const [results, setResults] = useState([])
     const [loading, setLoading] = useState(true)
 
+    document.title = `Resultados da busca por ${terms}`
 
 useEffect(() => {
     async function loadApi(){
-        const response = await api.get('search?q=Novidades').then(response => {
+        const response = await api.get(`search?q=${terms}`).then(response => {
             setResults(response.data.results)
 
             setLoading(false)
@@ -53,5 +52,5 @@ useEffect(() => {
         </div>
 
     )
-                
+   
 }

@@ -11,13 +11,13 @@ header{
 }
 
 input{
-    width: 60%;
+    width: 50%;
     max-width: 980px;
     min-width: 440px;
     height: 35px;
     background-color: rgb(225, 238, 240);
     border: rgb(205, 225, 228) 1px solid;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     color: rgb(147, 164, 166);
     font-size: large;
 }
@@ -30,4 +30,25 @@ input:focus{
     border: none;
     box-shadow: 0 0 0 0;
     outline: 0;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div a{
+    width: 10%;
+    color: rgb(147, 164, 166);
+    height: 35px;
+    font-weight: bolder;
+    padding: 1px;
+    background-color: rgb(225, 238, 240);
+    border: rgb(205, 225, 228) 1px solid;
+    border-radius: 0 10px 10px 0;
+}
+
+.lupaIcon{
+    font-size: 25px;
 }

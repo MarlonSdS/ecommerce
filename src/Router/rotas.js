@@ -4,6 +4,7 @@ import Eletronicos from '../components/Eletronicos'
 import Roupa from '../components/Roupa'
 import Smartphone from '../components/Smartphone'
 import Home from '../components/Home'
+import Search from '../components/Search'
 
 export default function Rotas(){
     return(
@@ -14,6 +15,7 @@ export default function Rotas(){
             <Route path='/eletronicos' element={<Eletronicos />}/>
             <Route path='/roupas' element={<Roupa />}/>
             <Route path='/acessorios' element={<Acessorio />}/>
+            <Route path='search/:terms' element={<Search />}/>
 
         </Routes>
 

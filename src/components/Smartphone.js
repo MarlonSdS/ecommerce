@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import api from '../services/api'
 import limitarTitulo from '../services/substr'
 import Loading from "./Loading";
+import setTitle from "../services/title";
+setTitle()
 
 export default function Smartphone(){
     const [results, setResults] = useState([])
